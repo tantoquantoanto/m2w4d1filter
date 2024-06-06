@@ -3,7 +3,11 @@ body {
     margin: 0;
     box-sizing: border-box;
     background-color: aquamarine;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+
+
 
 .main {
     display: flex;
@@ -11,6 +15,17 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 100px;
+}
+
+.title {
+    color: rgb(72, 105, 248);
+    font-size: 70px;
+
+}
+
+.subtitle {
+    color: rgb(72, 105, 248);
+    font-size: 30px;
 }
 
 .input {
@@ -23,6 +38,7 @@ body {
     width: 200px;
     border: 2px solid rgb(72, 105, 248);
     
+    
 }
 .inputs {
     display: flex;
@@ -30,11 +46,13 @@ body {
     justify-content: center;
     width: 100vw;
     
+    
 }
 
 #search {
     border-radius: 20px;
     height: 30px;
+    width: 80px;
 
 }
 
@@ -44,11 +62,36 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
 .buttonclicked {
     background-color: rgb(72, 105, 248);
     color: white;
-    width: 100px;
-    height: 40px;
+    width: 150px;
+    height: 50px;
+}
+
+.listcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid rgb(72, 105, 248);
+    margin-top: 50px;
+    width: 400px;
+    list-style: none;
+
+    
+}
+.h3 {
+    display: none;
+}
+
+.h3-visible {
+    color: rgb(72, 105, 248);
+    display: inline;
+    margin-top: 20px;
 }

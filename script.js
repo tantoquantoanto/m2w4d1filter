@@ -86,7 +86,7 @@ const jobs = [
   ]
   
 
-
+let h3 = document.querySelector(".h3");
 let btn = document.getElementById("search");
 let userJobs = document.getElementById("userjobs");
 let job1 = { 
@@ -104,8 +104,11 @@ userJobs.innerText = "Nessun lavoro trovato"
 } else {
   gotJobs.forEach((gotJob) => {
     let result = document.createElement("li");
-    result.innerText = `${gotJob.title}  ${gotJob.location}`
+    result.innerText = `${gotJob.title} ${  gotJob.location}`
     userJobs.appendChild(result);
+    h3.classList.add("h3-visible");
+    btn.classList.add("buttonclicked");
+
   })
 }
 
