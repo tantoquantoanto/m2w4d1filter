@@ -2,7 +2,6 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: aquamarine;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -17,14 +16,28 @@ body {
     margin-top: 100px;
 }
 
+.title-subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100vw;
+    height: 400px;
+    background-image: url(background.header.jpg);
+    background-size: cover;
+
+}
+
 .title {
-    color: rgb(72, 105, 248);
+    color: white;
     font-size: 70px;
+    
 
 }
 
 .subtitle {
-    color: rgb(72, 105, 248);
+    color: white;
     font-size: 30px;
 }
 
@@ -77,12 +90,13 @@ body {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    background-color: white;
     border-radius: 20px;
     border: 2px solid rgb(72, 105, 248);
     margin-top: 50px;
     width: 400px;
     list-style: none;
+    background-image: url(sfondolista.webp);
+    background-size: cover;
 
     
 }
@@ -94,4 +108,12 @@ body {
     color: rgb(72, 105, 248);
     display: inline;
     margin-top: 20px;
+}
+
+.result {
+    color: rgb(185, 14, 185);
+    list-style: none;
+    margin: 20px;
+    font-weight: bold;
+
 }

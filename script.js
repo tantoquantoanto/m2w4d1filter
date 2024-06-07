@@ -245,6 +245,7 @@ function giveJobs(title, location) {
         (job.location.toLowerCase().includes(location.toLowerCase()) || location.toLowerCase() === ""));
     (gotJobs.length === 0) ? userJobs.innerText = "Nessun lavoro trovato": gotJobs.forEach((gotJob) => {
             let result = document.createElement("li");
+            result.classList.add("result");
             result.innerText = `${gotJob.title} ${gotJob.location}`
             userJobs.appendChild(result);
             h3.classList.add("h3-visible");
